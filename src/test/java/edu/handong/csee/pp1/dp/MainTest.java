@@ -24,7 +24,7 @@ public class MainTest {
 	@Test
 	public void testForTasks2() {
 		// TASK2 TODO GitHub에서 작은 규모의 자바 프로젝트를 2개를 찾아, arff파일을 생성하시오. 파일이름은 [project이름].arff data디렉터리에 저장되게 하고
-		String[] args = {"/Users/joonhyukpark/git/reversi","data/reversi.arff"};
+		String[] args = {"/Users/joonhyukpark/git/spyjar","data/spyjar.arff"};
 		assertEquals(args.length,2);
 		
 		Main.main(args);
