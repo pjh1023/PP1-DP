@@ -103,7 +103,7 @@ public class MetricCollector {
 	
 	private int computeNumOfForLoops(JavaASTParser codeAST) {
 		// TASK1 TODO codeAST에서 for loop의 개수를 가져온다.
-		return 0;
+		return codeAST.getLineNum(0);
 	}
 	
 	private int computeNumOfIfStatements(JavaASTParser codeAST) {
