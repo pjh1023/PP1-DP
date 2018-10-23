@@ -108,7 +108,7 @@ public class MetricCollector {
 	
 	private int computeNumOfIfStatements(JavaASTParser codeAST) {
 		// TASK1 TODO codeAST에서 if문의 개수를 가져온다.
-		return 0;
+		return codeAST.getIfStatements().size();
 	}
 	
 	public void saveAnArffFile() {
