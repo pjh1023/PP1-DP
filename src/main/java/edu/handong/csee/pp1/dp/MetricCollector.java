@@ -86,8 +86,7 @@ public class MetricCollector {
 		return sourceCode.split("\n").length;
 	}
 	
-	private int computeNumOfVariables(JavaASTParser codeAST) {
-		
+	private int computeNumOfVariables(JavaASTParser codeAST) {		
 		// codeAST에서 변수선언된 요소들을 가져오고 몇 개나 있는지 크기를 가져온다.
 		return codeAST.getVariableDeclarationFragments().size();
 	}
@@ -99,7 +98,7 @@ public class MetricCollector {
 	
 	private int computeNumOfMethodInvocations(JavaASTParser codeAST) {
 		// TASK1 TODO codeAST에서 매소드 호출된 개수를 가져온다.
-		return 0;
+		return codeAST.getMethodInvocations().size();
 	}
 	
 	private int computeNumOfForLoops(JavaASTParser codeAST) {
